@@ -1,7 +1,6 @@
 #include <iostream>
-#include <string>
 #include <fstream>
-#include <vector>
+#include "le_arquivo.hpp"
 
 std :: vector<std :: string> le_arquivo(){
     std :: ifstream arquivo;
