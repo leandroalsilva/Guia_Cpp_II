@@ -5,16 +5,16 @@
 #include <fstream>
 #include <ctime>
 #include <cstdlib>
-#include "letra_existe.cpp"
-#include "nao_acertou.cpp"
-#include "imprime_cabecalho.cpp"
-#include "le_arquivo.cpp"
-#include "sorteia_palavra.cpp"
-#include "imprime_erros.cpp"
-#include "nao_enforcou.cpp"
-#include "imprime_palavra.cpp"
-#include "chuta.cpp"
-#include "adiciona_palavra.cpp"
+#include "letra_existe.hpp"
+#include "nao_acertou.hpp"
+#include "imprime_cabecalho.hpp"
+#include "le_arquivo.hpp"
+#include "sorteia_palavra.hpp"
+#include "imprime_erros.hpp"
+#include "nao_enforcou.hpp"
+#include "imprime_palavra.hpp"
+#include "chuta.hpp"
+#include "adiciona_palavra.hpp"
 
 using namespace std;
 
@@ -58,4 +58,5 @@ int main()
     }
 
     cin.get();
+    //g++ *.cpp -o forca.exe no terminal para verificar erros
 }
