@@ -8,3 +8,7 @@ Por exemplo, ao tentar compilar "g++ adiciona_palavra.cpp" e gerar um programa d
 pois não há implementação de alguns dos headers, somente a definição deles. Entretanto, se a intenção é somente compilar o arquivo
 gerando um código de máquina referente a esta TU, faz-se "g++ -c adiciona_palavra.cpp", gerando uma saída objeto (binário), algo que 
 o processador consegue executar. Dessa forma, o programa completo é uma junção de todas as TUs.
+
+3. Processo de linking: reune as TUs. Os erros anteriores de múltiplas definições ocorriam devido a falha de assimilação de funções/
+variáveis nesse processo. Sem utilizar "extern", o linking falhava pois não sabia qual definição tomar como a correta. Dessa forma,
+com várias TUs, é possível compilar somente os arquivos que receberam alterações, e assim juntar com as outras TUs.
