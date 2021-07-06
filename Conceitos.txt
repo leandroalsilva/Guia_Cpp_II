@@ -1,0 +1,10 @@
+*******Etapas de compilação*******
+
+1. Interpretar instruções de pré-processamento (headers)
+
+2. Em seguida é gerada uma Translation Unit. O compilador de C++ não se importa com arquivos, pois são só uma forma de se enviar código
+para o compilador. A TU forca.cpp possui as definições de todas as funções. Vale notar que duas TUs são compiladas de forma separada.
+Por exemplo, ao tentar compilar "g++ adiciona_palavra.cpp" e gerar um programa do arquivo adiciona_palavra.cpp, são retornados erros, 
+pois não há implementação de alguns dos headers, somente a definição deles. Entretanto, se a intenção é somente compilar o arquivo
+gerando um código de máquina referente a esta TU, faz-se "g++ -c adiciona_palavra.cpp", gerando uma saída objeto (binário), algo que 
+o processador consegue executar. Dessa forma, o programa completo é uma junção de todas as TUs.
