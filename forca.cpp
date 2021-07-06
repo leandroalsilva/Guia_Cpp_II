@@ -59,4 +59,6 @@ int main()
 
     cin.get();
     //g++ *.cpp -o forca.exe no terminal para verificar erros
+    //g++ -c *.cpp para compilar todos arquivos e gerar TUs (.o)
+    //g++ *.o -o forca.exe para juntar as TUs e gerar o executável
 }
